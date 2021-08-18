@@ -1,0 +1,84 @@
+.video {
+   position: relative;
+   overflow: hidden;
+   height: 0;
+   padding-bottom: 53.25%;
+
+   @media (min-width:$md1+px) {
+      padding-bottom: 54.25%;
+   }
+}
+
+.video iframe,
+.video object,
+.video embed {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+
+.video-container {
+   position: relative;
+   padding-top: 4.6%;
+   background: url(../img/video-top-line.jpg) top no-repeat;
+   background-size: contain;
+
+   @media (min-width:$md3+px) {
+      padding-top: 15px;
+   }
+
+   @media (min-width:$md2+px) {
+      padding-top: 27px;
+   }
+}
+
+.video-box {
+   position: relative;
+   border: 1px solid #000;
+}
+
+.video-btn-play,
+.video-btn-close {
+   position: absolute;
+   width: 24px;
+   height: 24px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+   z-index: 3;
+   cursor: pointer;
+
+   @media (min-width:$md2+px) {
+      width: 48px;
+      height: 48px;
+   }
+}
+
+.video-poster {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+}
+
+.video-btn-close {
+   top: -33px;
+   right: -25px;
+   background-image: url(../img/icons/close-btn.svg);
+   display: none;
+
+   @media (max-width:$md3+px) {
+      top: -20px;
+      right: -5px;
+   }
+}
+
+.video-btn-play {
+   top: 50%;
+   left: 50%;
+   background-image: url(../img/icons/play-btn.svg);
+   transform: translate(-50%, -50%);
+}

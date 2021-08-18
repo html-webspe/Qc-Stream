@@ -1,0 +1,146 @@
+.about {
+
+   @media (min-width:$md3+px) {
+      margin-bottom: 70px;
+   }
+
+   @media (min-width:$md2+px) {
+      margin-bottom: 80px;
+   }
+
+   &__list {
+      list-style: none;
+   }
+
+   &__item {
+      position: relative;
+      padding-left: 56px;
+      margin-bottom: 24px;
+
+      @media (min-width:$md1+px) {
+         padding-left: 96px;
+
+         &:not(:last-child) {
+            margin-bottom: 40px;
+         }
+      }
+
+      &:before {
+         content: '';
+         position: absolute;
+         top: 6px;
+         left: 0;
+         background-image: url(../img/icons/brand-icon.svg);
+         background-repeat: no-repeat;
+         background-size: cover;
+         height: 24px;
+         width: 40px;
+
+         @media (min-width:$md1+px) {
+            width: 64px;
+            height: 41px;
+         }
+      }
+
+   }
+
+   &__title {
+
+      @media (max-width:$md3+px) {
+         padding-right: 66px;
+
+         span {
+            display: block;
+         }
+      }
+   }
+
+   &__text {
+      @media (min-width:$md3+px) {
+         padding-right: 33px;
+      }
+   }
+
+   &__row {
+      @media (min-width:$md3+px) {
+         align-items: center;
+      }
+   }
+
+   &__col {
+
+      &:first-child {
+         @media (max-width:$md3+px) {
+            margin-bottom: 24px;
+         }
+      }
+   }
+
+   &__col-video {
+
+      @media (min-width:$md3+px) and (max-width:$md2+px) {
+         padding-left: 8px;
+      }
+
+      @media (min-width:$md2+px) {
+         flex: 0 0 448px;
+      }
+   }
+}
+
+.about__price {
+   position: relative;
+   flex: 1 1 50%;
+
+   @media (min-width:$md3+px) {
+      margin-top: 72px;
+   }
+
+   @media (min-width:$md1+px) {
+      margin-top: 80px;
+   }
+
+   svg {
+      position: absolute;
+      z-index: -1;
+
+      @media (max-width:$md3+px) {
+         top: -48px;
+         right: -33px;
+         width: 129px;
+      }
+
+      @media (min-width:$md3+px) {
+         top: 50%;
+         left: auto;
+         right: -15px;
+         transform: translateY(-50%);
+         width: 150px;
+         height: 96px;
+      }
+
+      @media (min-width:$md1+px) {
+         width: 258px;
+         height: 165px;
+      }
+   }
+
+   span {
+      @include formular(32, 40);
+
+      @media (min-width:$md1+px) {
+         font-size: 72px;
+         line-height: 88px;
+      }
+   }
+}
+
+.section__video-overlay {
+   position: absolute;
+   background: url(../img/video-overlay.jpg) 0 0 no-repeat;
+   background-size: cover;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}

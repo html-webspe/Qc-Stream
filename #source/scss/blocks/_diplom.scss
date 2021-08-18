@@ -1,0 +1,38 @@
+.diplom {
+
+   p {
+      margin-bottom: 26px;
+   }
+
+   .section-text {
+      @media (min-width:$md3+px) {
+         margin-right: 32px;
+      }
+   }
+}
+
+.diplom-body {
+   @media (min-width:$md3+px) {
+      display: flex;
+      align-items: center;
+   }
+}
+
+.diplom-img {
+   border-radius: 22px;
+   background: url(../img/diplom-bg.png) 00 no-repeat;
+   background-size: contain;
+
+   @media (max-width:$md3+px) {
+      padding: 12px;
+   }
+
+   @media (min-width:$md3+px) {
+      flex: 0 0 50%;
+      padding: 22px;
+   }
+
+   img {
+      border-radius: 6px;
+   }
+}

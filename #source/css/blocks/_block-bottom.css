@@ -1,0 +1,20 @@
+.block-bottom {
+  height: 80px;
+  background-image: url(../img/block-bottom-dots.svg);
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .block-bottom__text {
+    font-family: "Formular";
+    font-weight: bold;
+    line-height: 20px;
+    background-color: #fff;
+    padding: 0px 10px;
+    margin: 0 auto;
+    text-align: center; }

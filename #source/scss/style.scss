@@ -1,0 +1,159 @@
+//<МИКСИНЫ>===============================================================================================
+@import "ui/_mixins";
+//</МИКСИНЫ>===============================================================================================
+
+//<Подключаем шрифты>=======================================================================================
+@import "ui/_fonts";
+//</Подключаем шрифты>=======================================================================================
+
+//<Подключаем переменные>=======================================================================================
+@import "_vars";
+//</Подключаем переменные>=======================================================================================
+
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  font-size: 12px;
+}
+
+
+body {
+  font-size: 25px;
+  line-height: 31px;
+  font-family: "Source Code Pro", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #000;
+
+  color: $darkColor;
+
+  @media (min-width:$md2+px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+//<ОБОЛОЧКА>===========================================================================================================
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+
+  &.loaded {}
+}
+
+
+//</ОСНОВНАЯ СЕТКА>===========================================================================================================
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 51px;
+  padding-right: 93px;
+}
+
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+.home {
+  padding-top: 80px;
+}
+
+.home__head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.brand {
+  font-family: "Formular";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 40px;
+  letter-spacing: 0.5px;
+  padding-left: 62px;
+}
+
+.home__body {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.home__text {
+  font-size: 35px;
+  line-height: 44px;
+  margin-bottom: 33px;
+  padding-left: 62px;
+}
+
+.home__text-bold {
+  font-family: "Formular";
+  font-weight: bold;
+  line-height: 67px;
+  font-size: 40px;
+  padding: 32px 37px 32px 62px;
+  background-color: #00FA99;
+}
+
+.home__col {
+  &:first-child {
+    padding-right: 120px;
+    flex: 0 1 60%;
+  }
+
+  &:last-child {
+    flex: 0 1 40%;
+  }
+}
+
+.home__bottom {
+  height: 106px;
+  width: 100%;
+  background: url(../img/home-bottom.jpg) center, no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+}
+
+@import "ui/_ui";

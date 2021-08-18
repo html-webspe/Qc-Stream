@@ -1,0 +1,53 @@
+.section-block {
+   background-color: $acentColor;
+
+   display: flex;
+   align-items: center;
+
+   @media (max-width:$md3+px) {
+      min-height: 384px;
+   }
+
+   @media (min-width:$md3+px) {
+      padding: 80px 80px 56px 80px;
+   }
+
+   @media (min-width:$md1+px) {
+      padding: 160px 136px 120px 136px;
+   }
+}
+
+.section-block__body {
+   position: relative;
+   background-color: $whiteColor;
+
+   @media (max-width:$md3+px) {
+      padding: 40px 16px;
+   }
+
+   @media (min-width:$md3+px) {
+      padding: 40px;
+   }
+
+   @media (min-width:$md2+px) {
+      padding: 92px 32px;
+      max-width: 800px;
+      margin: 0 auto;
+
+      p {
+         font-size: 24px;
+         line-height: 40px;
+      }
+   }
+
+   svg {
+      width: 73px;
+      position: absolute;
+      left: 12px;
+      top: -23px;
+
+      @media (min-width:$md1+px) {
+         width: 105px;
+      }
+   }
+}

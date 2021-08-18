@@ -1,0 +1,22 @@
+.title {
+   @include formular(32, 40);
+
+   @media (min-width:$md3+px) {
+      @include formular(48, 64);
+   }
+}
+
+.section-title {
+   @include formular(24, 32);
+   margin-bottom: $mb24;
+
+   @media (min-width:$md3+px) {
+      margin-bottom: 32px;
+   }
+
+   @media (min-width:$md1+px) {
+      font-size: 32px;
+      line-height: 40px;
+      margin-bottom: 40px;
+   }
+}

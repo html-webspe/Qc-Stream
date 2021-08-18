@@ -1,0 +1,60 @@
+.subscription__icon {
+   text-align: center;
+
+   @media (max-width:$md3+px) {
+      margin-bottom: 16px;
+
+   }
+
+   @media (min-width:$md2+px) {
+      flex: 0 0 256px;
+   }
+
+
+   img {
+      @media (max-width:$md3+px) {
+         width: 200px;
+      }
+
+   }
+}
+
+.subscription__container {
+   @media (min-width:$md3+px) {
+      padding: 0 24px;
+   }
+}
+
+.section__title {
+   @media (min-width:$md1+px) {
+      margin-bottom: 40px;
+   }
+}
+
+.subscription__body {
+   border: 1px solid $darkColor;
+   padding: 32px 16px;
+
+   @media (min-width:$md3+px) {
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 32px;
+   }
+
+   @media (min-width:$md1+px) {
+      padding: 80px;
+   }
+
+}
+
+.subscription__text {
+   @media (min-width:$md3+px) {
+      margin-right: 40px;
+   }
+
+   span {
+      @media (min-width:$md3+px) {
+         display: block;
+      }
+   }
+}

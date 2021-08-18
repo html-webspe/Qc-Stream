@@ -1,0 +1,16 @@
+   padding: 27px 0 13px 0;
+
+   @media (min-width:$md3+px) {
+      padding: 35px 0 25px 0;
+   }
+
+   .header__brand-name {
+      width: 95px;
+      height: 20px;
+      display: inline-block;
+   }
+
+   svg {
+      height: 100%;
+   }
+}

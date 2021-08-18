@@ -1,0 +1,214 @@
+.home {
+   margin-bottom: 26px;
+
+   @media (min-width:$md3+px) {
+      margin-bottom: 44px;
+   }
+
+   @media (min-width:$md1+px) {
+      margin-bottom: 80px;
+   }
+
+   &__container {
+      position: relative;
+   }
+
+   &__row {
+      @media (max-width:$md1+px) {
+         align-items: center;
+      }
+   }
+
+   &__title {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 28px;
+
+      @media (max-width:$md3+px) {
+         padding-right: 60px;
+      }
+
+      @media (min-width:$md3+px) {
+         margin-bottom: 48px;
+         font-size: 32px;
+         line-height: 40px;
+      }
+
+      @media (min-width:$md1+px) {
+         font-size: 48px;
+         line-height: 64px;
+         margin-bottom: 80px;
+      }
+
+      &:after {
+         content: '';
+         position: absolute;
+         background-image: url(../img/icons/title-icon.svg);
+         background-repeat: no-repeat;
+         background-size: contain;
+         width: 74px;
+         height: 74px;
+         top: 15px;
+         right: 0;
+
+
+         @media (min-width:$md3+px) {
+            top: -10px;
+            right: -96px;
+         }
+
+         @media (min-width:$md1+px) {
+            width: 127px;
+            height: 127px;
+            top: -15px;
+            right: -150px;
+         }
+      }
+
+      span {
+         display: block;
+      }
+   }
+
+   &__list {
+      margin-bottom: 24px;
+
+      @media (min-width:$md3+px) {
+         margin-bottom: 28px;
+      }
+
+      @media (min-width:$md1+px) {
+         margin-bottom: 56px;
+      }
+   }
+
+   &__item {
+      display: inline-flex;
+      position: relative;
+      font-size: 12px;
+      line-height: 16px;
+
+      &:not(:last-child) {
+         &:after {
+            content: '';
+            transform: rotate(23deg);
+            margin: 2px 10px 0px 14px;
+            height: 15px;
+            width: 1px;
+            background-color: #000;
+            flex: 0 0 1px;
+            align-items: center;
+
+            @media (min-width:$md1+px) {
+               transform: rotate(-23deg);
+               margin: 6px 10px 0px 14px;
+            }
+         }
+      }
+
+      @media (min-width:1200px) {
+         font-size: 18px;
+         line-height: 24px;
+      }
+   }
+
+   &__head {
+      @media (max-width:$md3+px) {
+         display: flex;
+         flex-direction: column-reverse;
+      }
+   }
+
+   &__leble {
+      @include formular (18, 24);
+      margin-bottom: 32px;
+
+      @media (min-width:$md3+px) {
+         font-size: 24px;
+         line-height: 32px;
+         margin-bottom: 40px;
+      }
+
+      @media (min-width:$md1+px) {
+         font-size: 24px;
+         line-height: 32px;
+         margin-bottom: 84px;
+      }
+
+      span {
+         display: inline-block;
+         padding: 4px 8px;
+         margin-left: 3px;
+         background-color: #000;
+         color: #fff;
+
+         @media (min-width:$md1+px) {
+            padding: 8px 8px;
+            margin-left: 12px;
+         }
+      }
+   }
+
+   &__info {
+      border: 1px solid $darkColor;
+
+
+      @media (max-width:$md3+px) {
+         margin-bottom: 32px;
+         margin-right: 80px;
+         padding: 16px;
+      }
+
+      @media (min-width:$md3+px) {
+         margin-bottom: 40px;
+         display: flex;
+         max-width: 505px;
+         padding-right: 0;
+         padding: 24px;
+      }
+
+      @media (min-width:$md1+px) {
+         max-width: 705px;
+      }
+   }
+
+   &__info-block {
+      display: flex;
+      align-items: center;
+      @include formular (14, 20);
+
+      @media (max-width:$md3+px) {
+         &:first-child {
+            margin-bottom: 16px;
+         }
+      }
+
+      @media (min-width:$md1+px) {
+         font-size: 18px;
+         line-height: 24px;
+      }
+
+      &:before {
+         content: '';
+         background-image: url(../img/icons/brand-icon.svg);
+         background-repeat: no-repeat;
+         background-size: cover;
+         flex: 0 0 40px;
+         height: 24px;
+         margin-right: 16px;
+
+         @media (min-width:$md1+px) {
+            flex: 0 0 64px;
+            width: 64px;
+            height: 41px;
+            margin-right: 32px;
+         }
+      }
+   }
+
+
+}
+
+._dynamic_adapt_767 {
+   text-align: center;
+}

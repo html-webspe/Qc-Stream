@@ -1,0 +1,112 @@
+.develop-container {
+   @extend .success-container;
+
+   @media (min-width:$md3+px) {
+      padding-right: 56px;
+   }
+}
+
+
+.develop {
+   &__title {
+      @media (max-width:$md3+px) {
+         padding-right: 60px;
+      }
+
+      @media (min-width:$md2+px) {
+         max-width: 70%;
+      }
+   }
+}
+
+
+
+.develop-slider {
+   @media (min-width:$md3+px) {
+      justify-content: space-between;
+   }
+}
+
+.item-develop {
+   text-align: center;
+   padding-top: 27px;
+
+   @media (max-width:$md3+px) {
+      width: 136px;
+      margin: 0 8px;
+   }
+
+   @media (min-width:$md3+px) {
+      width: 152px;
+      margin: 0;
+   }
+
+   @media (min-width:1200px) {
+      width: 256px;
+      padding-top: 45px;
+   }
+
+   &__img {
+      @media (max-width:$md3+px) {
+         margin-bottom: 37px;
+         height: 63px;
+      }
+
+      @media (min-width:$md3+px) {
+         margin-bottom: 41px;
+         height: 69px;
+      }
+
+      @media (min-width:$md2+px) {
+         margin-bottom: 56px;
+         height: 107px;
+      }
+
+      img {
+         height: 100%;
+      }
+   }
+
+   &__title {
+      @media (max-width:$md3+px) {
+         margin-bottom: 8px;
+      }
+
+      @media (min-width:$md3+px) {
+         margin-bottom: 18px;
+      }
+
+      @media (min-width:$md2+px) {
+         font-size: 18px;
+         line-height: 24px;
+      }
+   }
+
+   &__step {
+      @include formular(14, 20);
+      margin-bottom: 12px;
+      background: #000000;
+      color: #fff;
+      padding: 6px 0;
+
+
+      @media (min-width:$md3+px) {
+         margin-bottom: 18px;
+      }
+
+      @media (min-width:$md2+px) {
+         font-size: 18px;
+         line-height: 24px;
+         padding: 8px 0;
+      }
+   }
+
+   &__text {
+      @media (max-width:$md3+px) {
+         font-size: 12px;
+         line-height: 16px;
+      }
+   }
+}
+
+.black {}

@@ -1,0 +1,24 @@
+.salary__img {
+   width: 100%;
+   max-width: 460px;
+   min-height: 204px;
+}
+
+.salary__title {
+   margin-bottom: 24px;
+
+   @media (min-width:$md3+px) {
+      margin-bottom: 38px;
+   }
+
+   @media (min-width:$md1+px) {
+      margin-bottom: 80px;
+   }
+}
+
+.salary__body {
+   @media (min-width:$md3+px) {
+      display: flex;
+      justify-content: space-evenly;
+   }
+}

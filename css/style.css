@@ -1,0 +1,224 @@
+@font-face {
+  font-family: 'Source Code Pro';
+  src: url("../fonts/SourceCodePro-Regular.woff2") format("woff2"), url("../fonts/SourceCodePro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Source Code Pro';
+  src: url("../fonts/SourceCodePro-It.woff2") format("woff2"), url("../fonts/SourceCodePro-It.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Formular';
+  src: url("../fonts/Formular-Bold.woff2") format("woff2"), url("../fonts/Formular-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ul {
+  list-style-type: none; }
+
+img {
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover; }
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  font-size: 12px; }
+
+body {
+  font-size: 25px;
+  line-height: 31px;
+  font-family: "Source Code Pro", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #000;
+  color: #000; }
+  @media (min-width: 992.98px) {
+    body {
+      font-size: 18px;
+      line-height: 24px; } }
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden; }
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 51px;
+  padding-right: 93px; }
+
+.home {
+  padding-top: 80px; }
+
+.home__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 48px; }
+
+.brand {
+  font-family: "Formular";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 40px;
+  letter-spacing: 0.5px;
+  padding-left: 62px; }
+
+.home__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 40px; }
+
+.home__text {
+  font-size: 35px;
+  line-height: 44px;
+  margin-bottom: 33px;
+  padding-left: 62px; }
+
+.home__text-bold {
+  font-family: "Formular";
+  font-weight: bold;
+  line-height: 67px;
+  font-size: 40px;
+  padding: 32px 37px 32px 62px;
+  background-color: #00FA99; }
+
+.home__col:first-child {
+  padding-right: 120px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 60%;
+  flex: 0 1 60%; }
+
+.home__col:last-child {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 40%;
+  flex: 0 1 40%; }
+
+.home__bottom {
+  height: 106px;
+  width: 100%;
+  background: url(../img/home-bottom.jpg) center, no-repeat;
+  background-size: cover;
+  margin-bottom: 40px; }
+
+.video {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 53.25%; }
+  @media (min-width: 1439.98px) {
+    .video {
+      padding-bottom: 54.25%; } }
+
+.video iframe,
+.video object,
+.video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.video-container {
+  position: relative;
+  padding-top: 4.6%;
+  background: url(../img/video-top-line.jpg) top no-repeat;
+  background-size: contain; }
+  @media (min-width: 767.98px) {
+    .video-container {
+      padding-top: 15px; } }
+  @media (min-width: 992.98px) {
+    .video-container {
+      padding-top: 27px; } }
+
+.video-box {
+  position: relative;
+  border: 1px solid #000; }
+
+.video-btn-play,
+.video-btn-close {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 3;
+  cursor: pointer; }
+  @media (min-width: 992.98px) {
+    .video-btn-play,
+    .video-btn-close {
+      width: 48px;
+      height: 48px; } }
+
+.video-poster {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; }
+
+.video-btn-close {
+  top: -33px;
+  right: -25px;
+  background-image: url(../img/icons/close-btn.svg);
+  display: none; }
+  @media (max-width: 767.98px) {
+    .video-btn-close {
+      top: -20px;
+      right: -5px; } }
+
+.video-btn-play {
+  top: 50%;
+  left: 50%;
+  background-image: url(../img/icons/play-btn.svg);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }

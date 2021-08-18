@@ -1,0 +1,100 @@
+//<BUTTONS>====================================================================================================
+.btn {
+   position: relative;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   padding: 8px 71px;
+   text-align: center;
+   @include formular(18, 24);
+   background-color: $acentColor;
+   @include anim(0.3s, 0s);
+   border-radius: 56px;
+
+   @media (min-width:$md3+px) {
+      padding-left: 56px;
+      padding-right: 56px;
+   }
+
+   @media (min-width:$md1+px) {
+      font-size: 24px;
+      line-height: 32px;
+      padding: 12px 72px;
+   }
+
+   &:hover {
+      background-color: $darkColor;
+      color: $acentColor;
+   }
+
+   &:before,
+   &:after {
+      content: '';
+      position: absolute;
+      top: 55%;
+      transform: translateY(-50%);
+      width: 24px;
+      height: 16px;
+      background-repeat: no-repeat;
+      background-size: contain;
+   }
+
+   &:before {
+      background-image: url(../img/icons/arrow-right.svg);
+      left: 31px;
+
+      @media (min-width:$md3+px) {
+         left: 16px;
+      }
+
+      @media (min-width:$md1+px) {
+         left: 24px;
+      }
+   }
+
+   &:after {
+      background-image: url(../img/icons/arrow-left.svg);
+      right: 31px;
+
+      @media (min-width:$md3+px) {
+         right: 16px;
+      }
+
+      @media (min-width:$md1+px) {
+         right: 24px;
+      }
+   }
+}
+
+
+
+@media (max-width:$md3+px) {
+
+   #btn-fixed {
+      &.btn-fixed {
+         display: flex;
+      }
+   }
+
+   .btn-fixed {
+      position: fixed;
+      bottom: 30px;
+      left: 0;
+      z-index: 1000;
+      justify-content: center;
+      width: 100%;
+      padding: 14px 0 0 0;
+      @include anim(0.5s, 0s);
+
+      .btn {
+         border-radius: inherit;
+         padding: 12px 71px;
+      }
+   }
+}
+
+#btn-fixed {
+   display: none;
+}
+
+//</BUTTONS>====================================================================================================

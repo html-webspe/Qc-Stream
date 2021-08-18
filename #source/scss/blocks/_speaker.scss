@@ -1,0 +1,100 @@
+.speaker {
+
+   //padding-top: 0;
+   &-body {
+      @media (min-width:$md3+px) {
+         display: flex;
+         flex-wrap: wrap;
+      }
+   }
+
+   &__container {
+      @media (max-width:$md3+px) {
+         padding: 0;
+      }
+   }
+
+   .section-title {
+      @media (max-width:$md3+px) {
+         padding-left: 16px;
+         padding-right: 16px;
+      }
+   }
+
+   &-card {
+      position: relative;
+      flex: 0 0 312px;
+      margin-bottom: 16px;
+
+      @media (min-width:640px) {
+         margin-right: 16px;
+      }
+
+      @media (min-width:$md3+px) {
+         background-color: $acentColor;
+      }
+
+
+      @media (max-width:$md3+px) {
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+
+      @media (min-width:$md1+px) {
+         flex: 0 0 352px;
+         margin-right: 32px;
+         margin-bottom: 80px;
+
+         &:last-child {
+            margin-right: 0;
+         }
+      }
+
+      .logo-sign {
+         display: none;
+         position: absolute;
+         top: 194px;
+         right: -298px;
+         width: 367px;
+         height: 235px;
+         z-index: -1;
+
+         @media (min-width:$md3+px) and (max-width:$md1+px) {
+            display: block;
+         }
+
+      }
+   }
+
+   &-card__img {
+      background-color: $acentColor;
+   }
+
+   &-card__desk {
+      padding: 32px 90px 32px 32px;
+      margin-top: -4px;
+
+      @media (max-width:$md3+px) {
+         background-color: $acentColor;
+      }
+   }
+
+   &-card__name {
+      @include formular(18, 24);
+      margin-bottom: 24px;
+
+      @media (min-width:$md1+px) {
+         font-size: 24px;
+         line-height: 32px;
+      }
+   }
+
+   &-card__text+p {
+      margin-top: 24px;
+
+      @media (min-width:$md3+px) {
+         margin-top: 13px;
+      }
+   }
+}

@@ -67,7 +67,7 @@
 .video-btn-close {
    top: -33px;
    right: -25px;
-   background-image: url(../img/icons/close-btn.svg);
+   background-image: url(../img/close-btn.svg);
    display: none;
 
    @media (max-width:$md3+px) {
@@ -79,6 +79,6 @@
 .video-btn-play {
    top: 50%;
    left: 50%;
-   background-image: url(../img/icons/play-btn.svg);
+   background-image: url(../img/play-btn.svg);
    transform: translate(-50%, -50%);
 }

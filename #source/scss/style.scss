@@ -130,12 +130,8 @@ body {
     margin-bottom: 24px;
   }
 
-  @media (min-width:$md2+px) {
-    padding-left: 62px;
-  }
 
   @media (min-width:$md1+px) {
-
     font-size: 35px;
     line-height: 40px;
   }
@@ -156,30 +152,21 @@ body {
 .home__text {
   margin-bottom: 18px;
 
-  @media (min-width:$md2+px) {
-    padding-left: 62px;
-  }
 
   @media (min-width:$md1+px) {
-    font-size: 35px;
-    line-height: 44px;
+    font-size: 28px;
+    line-height: 38px;
     margin-bottom: 33px;
   }
 }
 
 .home__text-bold {
-  font-family: "Formular";
-  font-weight: bold;
 
   @media (min-width:$md2+px) {
-    padding: 32px 37px 32px 62px;
+    padding: 32px 37px 32px 0;
   }
 
-  @media (min-width:$md1+px) {
-    font-size: 36px;
-    line-height: 54px;
-
-  }
+  @media (min-width:$md1+px) {}
 }
 
 .home__col {

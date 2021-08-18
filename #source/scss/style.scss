@@ -157,14 +157,7 @@ body {
   }
 }
 
-.home__text-bold {
-
-  @media (min-width:$md2+px) {
-    padding: 32px 37px 32px 0;
-  }
-
-  @media (min-width:$md1+px) {}
-}
+.home__text-bold {}
 
 .home__col {
   flex: 0 1 50%;

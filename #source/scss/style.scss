@@ -115,7 +115,6 @@ body {
   @media (min-width:$md2+px) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 48px;
   }
 }
 
@@ -140,12 +139,10 @@ body {
 }
 
 .home__body {
-
   margin-bottom: 40px;
 
   @media (min-width:$md3+px) {
     display: flex;
-    align-items: center;
   }
 }
 
@@ -154,8 +151,8 @@ body {
 
 
   @media (min-width:$md1+px) {
-    font-size: 28px;
-    line-height: 38px;
+    font-size: 24px;
+    line-height: 32px;
     margin-bottom: 33px;
   }
 }
@@ -170,16 +167,7 @@ body {
 }
 
 .home__col {
-  @media (min-width:$md3+px) {
-    &:first-child {
-
-      flex: 0 1 60%;
-    }
-
-    &:last-child {
-      flex: 0 1 40%;
-    }
-  }
+  flex: 0 1 50%;
 
   @media (min-width:$md1+px) {
     &:first-child {

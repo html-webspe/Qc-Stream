@@ -60,18 +60,16 @@ button {
 
 
 body {
-  font-size: 25px;
-  line-height: 31px;
+  font-size: 18px;
+  line-height: 24px;
   font-family: "Source Code Pro", sans-serif;
   font-style: normal;
   font-weight: 500;
   color: #000;
 
-  color: $darkColor;
-
   @media (min-width:$md2+px) {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 25px;
+    line-height: 31px;
   }
 }
 
@@ -90,60 +88,116 @@ body {
   max-width: 1920px;
   margin: 0 auto;
   width: 100%;
-  padding-left: 51px;
-  padding-right: 93px;
+
+  @media (max-width:$md1+px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media (min-width:$md1+px) {
+    padding-left: 51px;
+    padding-right: 93px;
+  }
 }
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 .home {
-  padding-top: 80px;
+  padding-top: 24px;
+
+  @media (min-width:$md1+px) {
+    padding-top: 80px;
+  }
 }
 
 .home__head {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 48px;
+  margin-bottom: 28px;
+
+  @media (min-width:$md2+px) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+  }
 }
 
 .brand {
   font-family: "Formular";
   font-style: normal;
   font-weight: 900;
-  font-size: 35px;
-  line-height: 40px;
   letter-spacing: 0.5px;
-  padding-left: 62px;
+
+  @media (max-width:$md1+px) {
+    display: block;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width:$md2+px) {
+    padding-left: 62px;
+  }
+
+  @media (min-width:$md1+px) {
+
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+
 }
 
 .home__body {
-  display: flex;
-  align-items: center;
+
   margin-bottom: 40px;
+
+  @media (min-width:$md3+px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .home__text {
-  font-size: 35px;
-  line-height: 44px;
-  margin-bottom: 33px;
-  padding-left: 62px;
+  margin-bottom: 18px;
+
+  @media (min-width:$md2+px) {
+    padding-left: 62px;
+  }
+
+  @media (min-width:$md1+px) {
+    font-size: 35px;
+    line-height: 44px;
+    margin-bottom: 33px;
+  }
 }
 
 .home__text-bold {
   font-family: "Formular";
   font-weight: bold;
-  font-size: 36px;
-  line-height: 54px;
-  padding: 32px 37px 32px 62px;
+
+  @media (min-width:$md2+px) {
+    padding: 32px 37px 32px 62px;
+  }
+
+  @media (min-width:$md1+px) {
+    font-size: 36px;
+    line-height: 54px;
+
+  }
 }
 
 .home__col {
-  &:first-child {
-    padding-right: 120px;
-    flex: 0 1 60%;
+  @media (min-width:$md3+px) {
+    &:first-child {
+
+      flex: 0 1 60%;
+    }
+
+    &:last-child {
+      flex: 0 1 40%;
+    }
   }
 
-  &:last-child {
-    flex: 0 1 40%;
+  @media (min-width:$md1+px) {
+    &:first-child {
+      padding-right: 120px;
+    }
   }
 }
 

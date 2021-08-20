@@ -123,7 +123,9 @@ body {
         margin-left: auto;
         width: 270px;
         margin-right: 16px;
-        margin-bottom: -1px; } }
+        margin-bottom: -1px;
+        font-size: 18px;
+        line-height: 24px; } }
     @media (min-width: 767.98px) {
       .home__curse {
         margin-top: 9px;
@@ -212,7 +214,7 @@ body {
       background: #00FA9A;
       -webkit-box-shadow: -10px 0 0 #00fa9a, 10px 0 0 #00fa9a;
       box-shadow: -10px 0 0 #00fa9a, 10px 0 0 #00fa9a;
-      padding: 1 4px; }
+      padding: 1px 4px; }
   .home__lesson p {
     margin-bottom: 24px; }
   .home__lesson li {

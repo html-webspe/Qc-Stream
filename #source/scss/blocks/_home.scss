@@ -36,6 +36,8 @@
          width: 270px;
          margin-right: 16px;
          margin-bottom: -1px;
+         font-size: 18px;
+         line-height: 24px;
       }
 
       @media (min-width:$md3+px) {
@@ -160,7 +162,7 @@
             display: inline;
             background: #00FA9A;
             box-shadow: -10px 0 0 #00fa9a, 10px 0 0 #00fa9a;
-            padding: 1 4px;
+            padding: 1px 4px;
          }
       }
 

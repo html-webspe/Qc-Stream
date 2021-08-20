@@ -60,16 +60,20 @@ button {
 
 
 body {
-  font-size: 18px;
-  line-height: 24px;
+
   font-family: "Source Code Pro", sans-serif;
   font-style: normal;
   font-weight: 500;
   color: #000;
 
-  @media (min-width:$md2+px) {
-    font-size: 25px;
-    line-height: 31px;
+  @media (max-width:$md3+px) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @media (min-width:$md3+px) {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
@@ -85,96 +89,18 @@ body {
 
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
 .container {
-  max-width: 1920px;
+  max-width: 1440px;
   margin: 0 auto;
   width: 100%;
 
-  @media (max-width:$md1+px) {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  @media (min-width:$md1+px) {
-    padding-left: 51px;
-    padding-right: 93px;
+  @media (min-width:$md2+px) {
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
-.home {
-  padding-top: 24px;
 
-  @media (min-width:$md1+px) {
-    padding-top: 80px;
-  }
-}
-
-.home__head {
-  margin-bottom: 28px;
-
-  @media (min-width:$md2+px) {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.brand {
-  font-family: "Formular";
-  font-style: normal;
-  font-weight: 900;
-  letter-spacing: 0.5px;
-
-  @media (max-width:$md1+px) {
-    display: block;
-    margin-bottom: 24px;
-  }
-
-
-  @media (min-width:$md1+px) {
-    font-size: 35px;
-    line-height: 40px;
-  }
-
-
-}
-
-.home__body {
-  margin-bottom: 40px;
-
-  @media (min-width:$md3+px) {
-    display: flex;
-  }
-}
-
-.home__text {
-  margin-bottom: 18px;
-
-
-  @media (min-width:$md1+px) {
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 33px;
-  }
-}
-
-.home__text-bold {}
-
-.home__col {
-  flex: 0 1 50%;
-
-  @media (min-width:$md1+px) {
-    &:first-child {
-      padding-right: 120px;
-    }
-  }
-}
-
-.home__bottom {
-  height: 106px;
-  width: 100%;
-  background: url(../img/home-bottom.jpg) center, no-repeat;
-  background-size: cover;
-  margin-bottom: 40px;
-}
+@import "blocks/_home";
 
 @import "ui/_ui";

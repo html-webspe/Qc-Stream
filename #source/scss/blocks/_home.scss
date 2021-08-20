@@ -1,214 +1,245 @@
 .home {
-   margin-bottom: 26px;
+   padding-top: 24px;
 
-   @media (min-width:$md3+px) {
-      margin-bottom: 44px;
-   }
+   &__head {
+      padding-left: 16px;
 
-   @media (min-width:$md1+px) {
-      margin-bottom: 80px;
-   }
-
-   &__container {
-      position: relative;
-   }
-
-   &__row {
-      @media (max-width:$md1+px) {
-         align-items: center;
+      @media (min-width:$md3+px) {
+         display: flex;
+         justify-content: space-between;
       }
    }
 
-   &__title {
-      position: relative;
-      display: inline-block;
-      margin-bottom: 28px;
+   &__brand {
+      font-family: 'Formular';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 32px;
 
       @media (max-width:$md3+px) {
-         padding-right: 60px;
+         display: block;
+         margin-bottom: 24px;
+      }
+   }
+
+   &__curse {
+      font-family: 'Formular';
+      font-style: normal;
+      font-weight: bold;
+      background: #00FA9A;
+      border: 1px solid #000000;
+
+      @media (max-width:$md3+px) {
+         padding: 8px;
+         margin-left: auto;
+         width: 270px;
+         margin-right: 16px;
+         margin-bottom: -1px;
       }
 
       @media (min-width:$md3+px) {
-         margin-bottom: 48px;
+         margin-top: 9px;
+         padding: 16px;
          font-size: 32px;
          line-height: 40px;
       }
-
-      @media (min-width:$md1+px) {
-         font-size: 48px;
-         line-height: 64px;
-         margin-bottom: 80px;
-      }
-
-      &:after {
-         content: '';
-         position: absolute;
-         background-image: url(../img/icons/title-icon.svg);
-         background-repeat: no-repeat;
-         background-size: contain;
-         width: 74px;
-         height: 74px;
-         top: 15px;
-         right: 0;
-
-
-         @media (min-width:$md3+px) {
-            top: -10px;
-            right: -96px;
-         }
-
-         @media (min-width:$md1+px) {
-            width: 127px;
-            height: 127px;
-            top: -15px;
-            right: -150px;
-         }
-      }
-
-      span {
-         display: block;
-      }
    }
 
-   &__list {
-      margin-bottom: 24px;
+   &__body {
+      position: relative;
+      border: 1px solid #000000;
 
       @media (min-width:$md3+px) {
-         margin-bottom: 28px;
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
       }
 
-      @media (min-width:$md1+px) {
-         margin-bottom: 56px;
-      }
-   }
-
-   &__item {
-      display: inline-flex;
-      position: relative;
-      font-size: 12px;
-      line-height: 16px;
-
-      &:not(:last-child) {
-         &:after {
-            content: '';
-            transform: rotate(23deg);
-            margin: 2px 10px 0px 14px;
-            height: 15px;
-            width: 1px;
-            background-color: #000;
-            flex: 0 0 1px;
-            align-items: center;
-
-            @media (min-width:$md1+px) {
-               transform: rotate(-23deg);
-               margin: 6px 10px 0px 14px;
-            }
-         }
+      @media (max-width:1200px) {
+         padding: 71px 16px 25px 16px;
       }
 
       @media (min-width:1200px) {
-         font-size: 18px;
-         line-height: 24px;
+         padding: 80px;
       }
+
    }
 
-   &__head {
+   &__col {
+      flex: 1 1 50%;
+
       @media (max-width:$md3+px) {
-         display: flex;
-         flex-direction: column-reverse;
+         margin-bottom: 24px;
       }
-   }
-
-   &__leble {
-      @include formular (18, 24);
-      margin-bottom: 32px;
 
       @media (min-width:$md3+px) {
-         font-size: 24px;
-         line-height: 32px;
-         margin-bottom: 40px;
-      }
-
-      @media (min-width:$md1+px) {
-         font-size: 24px;
-         line-height: 32px;
-         margin-bottom: 84px;
-      }
-
-      span {
-         display: inline-block;
-         padding: 4px 8px;
-         margin-left: 3px;
-         background-color: #000;
-         color: #fff;
-
-         @media (min-width:$md1+px) {
-            padding: 8px 8px;
-            margin-left: 12px;
+         &:first-child {
+            padding-right: 32px;
          }
       }
    }
 
-   &__info {
-      border: 1px solid $darkColor;
-
-
+   &__col-video {
       @media (max-width:$md3+px) {
          margin-bottom: 32px;
-         margin-right: 80px;
-         padding: 16px;
-      }
-
-      @media (min-width:$md3+px) {
-         margin-bottom: 40px;
-         display: flex;
-         max-width: 505px;
-         padding-right: 0;
-         padding: 24px;
       }
 
       @media (min-width:$md1+px) {
-         max-width: 705px;
+         flex: 1 0 544px;
+      }
+
+      .video-container {
+         margin-bottom: 16px;
       }
    }
 
-   &__info-block {
-      display: flex;
-      align-items: center;
-      @include formular (14, 20);
+   &__col-content {
+      @media (min-width:$md3+px) {
+         padding-top: 40px;
+      }
 
-      @media (max-width:$md3+px) {
-         &:first-child {
-            margin-bottom: 16px;
+      .bold {
+
+         font-weight: bold;
+         margin-bottom: 16px;
+
+         @media (max-width:$md2+px) {
+            font-size: 18px;
+            line-height: 24px;
+         }
+
+         @media (min-width:$md2+px) {
+            font-size: 24px;
+            line-height: 32px;
          }
       }
 
-      @media (min-width:$md1+px) {
-         font-size: 18px;
-         line-height: 24px;
+      a {
+         font-weight: bold;
+      }
+   }
+
+   .block {
+      @media (max-width:$md2+px) {
+         &:not(:last-child) {
+            margin-bottom: 32px;
+         }
+      }
+
+      @media (min-width:$md2+px) {
+         &:not(:last-child) {
+            margin-bottom: 40px;
+         }
+      }
+   }
+
+   &__lesson {
+      .title-block {
+         font-family: 'Formular';
+         font-style: normal;
+         font-weight: bold;
+
+         @media (max-width:$md2+px) {
+            margin-bottom: 24px;
+            font-size: 24px;
+            line-height: 32px;
+         }
+
+         @media (min-width:$md2+px) {
+            margin-bottom: 40px;
+            font-size: 32px;
+            line-height: 40px;
+         }
+      }
+
+      h1 {
+         font-size: inherit;
+
+         span {
+            display: inline;
+            background: #00FA9A;
+            box-shadow: -10px 0 0 #00fa9a, 10px 0 0 #00fa9a;
+            padding: 1 4px;
+         }
+      }
+
+      p {
+         margin-bottom: 24px;
+      }
+
+      li {
+         display: flex;
+         align-items: center;
+
+         @media (max-width:$md2+px) {
+            &:not(:last-child) {
+               margin-bottom: 12px;
+            }
+         }
+
+         @media (min-width:$md2+px) {
+            &:not(:last-child) {
+               margin-bottom: 16px;
+            }
+         }
+
+         &:before {
+            content: '';
+            top: 0;
+            left: 0;
+            width: 8px;
+            height: 8px;
+            flex: 0 0 8px;
+            border-radius: 50%;
+            background-color: #000;
+            margin-right: 24px;
+         }
+      }
+   }
+
+   &__label {
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      width: 60px;
+      height: 58px;
+      background-color: #fff;
+   }
+
+   &__btn {
+      display: flex;
+      align-items: center;
+
+      &:after,
+      &:before {
+         content: '';
+         height: 16px;
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+
+         @media (max-width:$md3+px) {
+            width: 24px;
+         }
+
+         @media (min-width:$md3+px) {
+            width: 40px;
+         }
+      }
+
+      &:after {
+         background-image: url(../img/arrow-right.svg);
+         margin-left: 24px;
       }
 
       &:before {
-         content: '';
-         background-image: url(../img/icons/brand-icon.svg);
-         background-repeat: no-repeat;
-         background-size: cover;
-         flex: 0 0 40px;
-         height: 24px;
-         margin-right: 16px;
+         background-image: url(../img/arrow-left.svg);
+         margin-right: 24px;
+      }
 
-         @media (min-width:$md1+px) {
-            flex: 0 0 64px;
-            width: 64px;
-            height: 41px;
-            margin-right: 32px;
-         }
+      span {
+         border-bottom: 1px solid #000;
       }
    }
-
-
-}
-
-._dynamic_adapt_767 {
-   text-align: center;
 }
